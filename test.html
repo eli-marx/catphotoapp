@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-one: #e87d31;
+    --color-two: #3189e8;
+  }
+
+  :root {
+    --color-one: #00916b;
+    --color-two: #a835f0;
+  }
+
+  .vl {
+    border-left: 2px solid #c4c4c4;
+    height: 150px;
+  }
+
+  .boxed {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #cat-picture {
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 50%;
+    border-width: 15px;
+    border-color: var(--color-two); 
+    border-style: solid; 
+    border-radius: 5%;
+  }
+
+  p {
+    font-family: raleway, papyrus;
+    color: var(--color-two);
+  }
+
+ h1 {
+    text-align: center;
+    font-family: Indie Flower, Monospace;
+    color: var(--color-one);
+  }
+
+ li {
+    font-family: raleway, papyrus;
+    color: var(--color-one);
+  }
+
+ button {
+    font-family: raleway, papyrus;
+    color: var(--color-two);
+  }
+
+ form {
+    font-family: raleway, papyrus;
+    color: var(--color-one);
+  }
+
+  a {
+    color: var(--color-one)
+  }
+</style>
+</head>
+<body>
+  <h1>CatPhotoApp</h1>
+
+  <p>check out some cute cats <a target="_blank" href="https://pixabay.com/images/search/cat/"><b>here</b></a>.</p>
+
+  <a target="_blank" href="https://en.wikipedia.org/wiki/American_Shorthair">
+    <img class="responsive-image" id="cat-picture" src="https://vetstreet.brightspotcdn.com/dims4/default/f6ba8d3/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F56%2F92a390a27c11e087a80050568d634f%2Ffile%2FAmerican-Shorthair-2-645mk062211.jpg">
+  </a>
+
+  <div class="boxed">
+    <div style="margin-right: 10px;">
+      <p>3 things cats love:</p>
+
+      <ul>
+        <li>catnip</li>
+        <li>yarn</li>
+        <li>lasagna</li>
+      </ul>
+    </div>
+    <div class="vl"></div>
+    <div style="margin-left: 10px;">
+      <p>top 3 things cats hate:</p>
+
+      <ol>
+        <li>baths</li>
+        <li>mondays</li>
+        <li>thunder</li>
+      </ol>
+    </div>
+  </div>
+
+  <p>submit your own cat photos!</p>
+
+  <form>
+    <label for="indoor">
+      <input id="indoor" type="radio" name="indoor-outdoor" value="indoor">Indoor
+    </label>
+
+    <label for="outdoor">
+      <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor
+    </label><br>
+
+    <label for="tabby">
+      <input id="tabby" type="radio" name="breed" value="tabby">Tabby
+    </label>
+
+    <label for="black">
+      <input id="black" type="radio" name="breed" value="black">Black
+    </label>
+
+    <label for="hairless">
+      <input id="hairless" type="radio" name="breed" value="hairless">Hairless
+    </label>
+
+    <label for="other">
+      <input id="other" type="radio" name="breed" value="other">Other
+    </label><br>
+
+    <input type="text" required placeholder="cute cat photos here">
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
